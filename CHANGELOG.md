@@ -9,4 +9,4 @@ All notable learning and implementation changes will be documented in this file.
 - Initial repository-based project management documentation structure.
 - AI agent context file.
 - Sprint 00 setup checklist.
-
+- Definition layer for domain model, API conventions, and engineering rules.

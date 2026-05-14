@@ -8,13 +8,31 @@
 
 ## Response Rule
 
-Controllers return DTOs, not entities.
+Controllers return wrapped DTO responses, not entities.
+
+See `docs/03-architecture/api-conventions.md`.
+
+Success response:
+
+```json
+{
+  "message": "Success",
+  "data": {}
+}
+```
+
+List response:
+
+```json
+{
+  "message": "Success",
+  "data": []
+}
+```
 
 ## Error Rule
 
 Use a consistent error response shape once global exception handling is added.
-
-Draft:
 
 ```json
 {

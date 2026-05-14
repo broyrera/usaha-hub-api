@@ -25,6 +25,16 @@ Semua context project dikelola langsung di repository:
 - `docs/06-api` - dokumentasi API per module
 - `docs/07-review` - review, refactor plan, mistakes log
 
+## Definition Layer
+
+Sebelum coding, aturan produk dan engineering mengacu ke:
+
+- `docs/00-project/domain-model.md`
+- `docs/03-architecture/api-conventions.md`
+- `docs/03-architecture/engineering-rules.md`
+- `docs/03-architecture/database-design.md`
+- `docs/06-api/product-api.md`
+
 ## Current Focus
 
 Current topic:
@@ -69,3 +79,10 @@ test(product): add product service test
 refactor(product): simplify product mapper
 ```
 
+## Git Workflow
+
+Untuk fase awal:
+
+- Sprint 00 sampai Sprint 01 boleh pakai `main` only.
+- Mulai Sprint 02, gunakan `feature/*` branch kalau workflow sudah terasa nyaman.
+- Tetap buat commit kecil dan rapi.

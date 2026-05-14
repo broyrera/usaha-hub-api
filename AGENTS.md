@@ -6,6 +6,10 @@ This project is a Spring Boot learning project for building an UMKM management b
 
 Build a beginner-friendly but production-style backend while learning Spring Boot concepts through implementation.
 
+Usaha Hub API is a modular monolith backend for helping UMKM manage products, simple stock, sales transactions, and basic reports.
+
+It is not a full ERP, accounting system, marketplace, multi-tenant SaaS, or payment gateway app in the early phase.
+
 ## Project Management Rule
 
 Do not use Jira for this project phase.
@@ -30,9 +34,56 @@ Use repository-based project management:
 - Use DTOs for API request and response models.
 - Do not expose JPA entities directly from controllers.
 - Use constructor injection.
+- Use wrapped API responses.
+- Use manual DTO mapping first.
+- Do not use Lombok in the early phase.
+- Do not use MapStruct in the early phase.
 - Keep code beginner-friendly but production-style.
 - Prefer clear naming over clever abstraction.
 - Add documentation only when it helps learning or future maintenance.
+
+## Product Rules
+
+- Initial MVP includes Product CRUD, product persistence, basic auth, sales recording, and basic report.
+- Product has `sellingPrice` and optional `costPrice`.
+- Product stock cannot be negative.
+- Sale reduces product stock.
+- Sale cannot be created if product is inactive.
+- Sale cannot be created if stock is insufficient.
+- Initial user roles are `OWNER` and `STAFF`.
+- Role-based authorization can be defined before it is implemented.
+
+## API Rules
+
+- Base path is `/api/v1`.
+- Success response uses:
+
+```json
+{
+  "message": "Success",
+  "data": {}
+}
+```
+
+- Validation error response uses:
+
+```json
+{
+  "message": "Validation failed",
+  "errors": [
+    {
+      "field": "name",
+      "message": "must not be blank"
+    }
+  ]
+}
+```
+
+## Database Naming
+
+- Table names use snake_case plural names.
+- Column names use snake_case.
+- Java fields use camelCase.
 
 ## Backend Style
 
@@ -40,11 +91,11 @@ Preferred package direction:
 
 ```text
 com.usahahub.api
-├── product
-├── auth
-├── sales
-├── common
-└── config
++-- product
++-- auth
++-- sales
++-- common
+`-- config
 ```
 
 Inside a module, prefer:
@@ -62,7 +113,7 @@ service
 When making changes:
 
 1. Read the relevant sprint file first.
-2. Read related architecture or API docs if they exist.
+2. Read related domain, architecture, or API docs if they exist.
 3. Implement the smallest useful step.
 4. Update sprint checklist when a task is completed.
 5. Add or update learning notes only when the concept is important.

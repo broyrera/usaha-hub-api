@@ -8,6 +8,18 @@ Usaha Hub API
 
 Backend API untuk membantu UMKM mengelola produk, penjualan, dan operasional dasar.
 
+## Product Identity
+
+Usaha Hub API adalah backend modular monolith untuk membantu UMKM mengelola produk, stok sederhana, transaksi penjualan, dan laporan dasar.
+
+Project ini bukan:
+
+- full ERP
+- accounting system
+- marketplace
+- multi-tenant SaaS
+- payment gateway app
+
 ## Problem
 
 Banyak UMKM masih mengelola produk dan penjualan secara manual. Project ini memakai masalah tersebut sebagai studi kasus belajar backend yang realistis.
@@ -26,9 +38,13 @@ Membangun backend Spring Boot secara bertahap sambil memahami konsep:
 
 ## Target User
 
-- admin UMKM
 - owner usaha kecil
 - staff operasional
+
+## Initial Roles
+
+- `OWNER` - pemilik usaha.
+- `STAFF` - pegawai operasional.
 
 ## Learning Goal
 

@@ -1,13 +1,14 @@
 # Scope
 
-## In Scope
+## MVP Boundary
 
-Fase awal project mencakup:
+MVP awal project mencakup:
 
-- Product Management
-- Basic Authentication
-- Sales Recording
-- Basic Reporting
+- Product CRUD
+- Product persistence
+- Basic auth
+- Sales recording
+- Basic report
 - API documentation
 - Learning notes
 
@@ -19,6 +20,14 @@ Hal berikut belum dikerjakan di fase awal:
 - mobile app
 - payment gateway
 - multi-tenant company management
+- multi outlet
+- subscription
+- barcode
+- cashier UI
+- accounting
+- purchase order
+- supplier management
+- advanced inventory
 - advanced inventory forecasting
 - real-time notification
 
@@ -29,4 +38,6 @@ Tambahkan feature hanya jika:
 - membantu learning path Spring Boot
 - punya nilai dalam studi kasus UMKM
 - tidak membuat project terlalu berat untuk fase belajar
+
+Jika ide baru muncul tetapi tidak masuk MVP, tulis dulu di `docs/07-review/refactor-plan.md` atau future backlog.
 

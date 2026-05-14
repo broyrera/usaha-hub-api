@@ -19,3 +19,12 @@ Dokumentasikan saat membantu belajar atau maintenance.
 
 Tidak semua hal perlu ditulis sebelum coding.
 
+## Definition Layer
+
+Before coding, use these files as the main source of truth:
+
+- `00-project/domain-model.md`
+- `03-architecture/api-conventions.md`
+- `03-architecture/engineering-rules.md`
+- `03-architecture/database-design.md`
+- `06-api/product-api.md`

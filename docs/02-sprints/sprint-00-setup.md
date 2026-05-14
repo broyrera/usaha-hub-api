@@ -63,6 +63,36 @@ The learning project needs an executable backend foundation before feature work 
 - [ ] Project uses Maven
 - [ ] Basic package structure exists
 
+### Story 3 - Definition layer is clear before coding
+
+#### Why
+
+Product, API, domain, and engineering rules should be explicit before generating the Spring Boot project.
+
+#### Tasks
+
+- [x] Define product identity
+- [x] Define user roles
+- [x] Define core domain terms
+- [x] Define MVP boundary
+- [x] Define learning rules
+- [x] Define architecture rules
+- [x] Define API response convention
+- [x] Define product data model
+- [x] Define sales business rules
+- [x] Define authentication boundary
+- [x] Define database naming convention
+- [x] Define git workflow
+
+#### Acceptance Criteria
+
+- [x] `docs/00-project/domain-model.md` exists
+- [x] `docs/03-architecture/api-conventions.md` exists
+- [x] `docs/03-architecture/engineering-rules.md` exists
+- [x] Glossary includes core domain terms
+- [x] Product API draft uses the agreed product fields
+- [x] Database draft follows naming convention
+
 ## Sprint Notes
 
 Keep this sprint small. The goal is to prepare the workspace, not to build product features yet.

@@ -15,7 +15,7 @@ Build basic Product CRUD API using Spring MVC.
 
 ## Stories
 
-### Story 1 - Admin can create product
+### Story 1 - OWNER can create product
 
 #### Why
 
@@ -38,7 +38,7 @@ UMKM needs to register products before selling them.
 - [ ] Response uses DTO, not entity
 - [ ] Code uses service layer
 
-### Story 2 - Admin can view product list
+### Story 2 - OWNER can view product list
 
 #### Tasks
 
@@ -50,4 +50,3 @@ UMKM needs to register products before selling them.
 
 - [ ] Product list can be fetched using `GET /api/v1/products`
 - [ ] Response does not expose entity directly
-
