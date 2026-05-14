@@ -6,7 +6,7 @@
 
 ## Framework
 
-- Spring Boot 3.4.x
+- Spring Boot 3.5.x
 
 ## Build Tool
 
