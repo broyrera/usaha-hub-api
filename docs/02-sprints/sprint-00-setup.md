@@ -83,12 +83,14 @@ Product, API, domain, and engineering rules should be explicit before generating
 - [x] Define authentication boundary
 - [x] Define database naming convention
 - [x] Define git workflow
+- [x] Define locked decision table
 
 #### Acceptance Criteria
 
 - [x] `docs/00-project/domain-model.md` exists
 - [x] `docs/03-architecture/api-conventions.md` exists
 - [x] `docs/03-architecture/engineering-rules.md` exists
+- [x] Engineering rules include locked decisions
 - [x] Glossary includes core domain terms
 - [x] Product API draft uses the agreed product fields
 - [x] Database draft follows naming convention

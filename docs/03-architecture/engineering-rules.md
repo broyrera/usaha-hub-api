@@ -1,5 +1,24 @@
 # Engineering Rules
 
+## Locked Decisions
+
+| Area | Decision |
+| --- | --- |
+| Project type | UMKM Management Backend |
+| Architecture | Layered modular monolith |
+| API style | REST API |
+| API response | Wrapped response |
+| Database | PostgreSQL 16 |
+| Auth | JWT later |
+| User roles | `OWNER`, `STAFF` |
+| Initial module | Product |
+| First executable goal | Health endpoint |
+| Early product storage | In-memory is allowed before database persistence |
+| Lombok | Do not use in the early phase |
+| MapStruct | Do not use in the early phase |
+| Docker | Use later when database is introduced |
+| Jira | Do not use |
+
 ## Architecture
 
 - Use layered modular monolith architecture first.
@@ -46,4 +65,3 @@ Examples:
 - Sprint 00 and Sprint 01 can use `main` only.
 - Start using `feature/*` branches from Sprint 02 if the workflow still feels manageable.
 - Keep commits small and descriptive.
-

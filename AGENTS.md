@@ -53,6 +53,17 @@ Use repository-based project management:
 - Initial user roles are `OWNER` and `STAFF`.
 - Role-based authorization can be defined before it is implemented.
 
+## Locked Decisions
+
+- Project type is UMKM Management Backend.
+- Architecture is layered modular monolith.
+- API style is REST API.
+- API response uses wrapped response.
+- Initial module is Product.
+- First executable goal is health endpoint.
+- Early product storage may be in-memory before Sprint 02 database persistence.
+- Docker is introduced later when database setup starts.
+
 ## API Rules
 
 - Base path is `/api/v1`.
@@ -122,4 +133,3 @@ When making changes:
 ## Current Project Phase
 
 The project is in repository setup and Spring Boot foundation phase.
-
